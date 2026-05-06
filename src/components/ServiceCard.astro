@@ -1,0 +1,44 @@
+---
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const { icon, title, description } = Astro.props;
+---
+
+<article class="service-card">
+  <span class="service-icon" set:html={icon} />
+  <div class="service-info">
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+</article>
+
+<style>
+  .service-card {
+    display: grid;
+    grid-template-columns: auto 3fr;
+  }
+
+  .service-icon {
+    justify-self: end;
+    padding-right: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--primaryColor);
+  }
+
+  .service-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: 780px) {
+    .service-info h3 {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+</style>
