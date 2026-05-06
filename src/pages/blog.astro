@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Blog | Fulcrum Growth Technology Services"
+  description="Turnkey projects & ongoing assistance for young, growing companies"
+>
+  <main>
+    <Navbar />
+    <section class="blog-hero">
+      <div class="hero-background"></div>
+      <div class="banner">
+        <h1>Blog</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="blog-content">
+      <div class="blog-center">
+        <p>Blog posts coming soon.</p>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</BaseLayout>
+
+<style>
+  .blog-hero {
+    min-height: 200px;
+    background-image: linear-gradient(rgba(41, 60, 99, 0.15), rgba(41, 60, 99, 0.15)), url('/images/women-rowing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner {
+    text-align: left;
+    letter-spacing: var(--mainSpacing);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 12px 4px 71px hsla(0, 0%, 45.9%, 0);
+    margin: 1.25rem 1.25rem 0.25rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .blog-hero {
+      min-height: 450px;
+    }
+
+    .banner h1 {
+      margin: 4rem 1rem 1rem 4rem;
+      font-size: 3.5rem;
+    }
+  }
+
+  .blog-content {
+    padding: 4rem 1rem;
+  }
+
+  .blog-center {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
