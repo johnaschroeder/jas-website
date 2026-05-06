@@ -1,0 +1,51 @@
+<footer class="footer">
+  <div class="links">
+    <a href="/projects">Our Work</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="copyright">©2021 Fulcrum Growth</div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: auto;
+    padding: 10rem 0 4rem;
+    text-align: center;
+  }
+
+  .links a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    font-weight: 700;
+  }
+
+  .links a:hover {
+    color: var(--primaryColor);
+  }
+
+  .copyright {
+    letter-spacing: var(--mainSpacing);
+    line-height: 1;
+    margin-top: 1.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 6rem 0 4rem;
+      text-align: center;
+    }
+
+    .links a {
+      letter-spacing: 1px;
+    }
+
+    .copyright {
+      line-height: 1;
+      margin-top: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+</style>
