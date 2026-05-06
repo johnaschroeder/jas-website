@@ -1,0 +1,111 @@
+<section class="cta-wrapper">
+  <div class="project-cta">
+    <h2>Need help moving the needle?</h2>
+    <div class="subtitle">Let us be the fulcrum for your next project.</div>
+  </div>
+  <div class="project-contact">
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="block-quote">
+    <div class="quote">"Give me a lever long enough and<br/>a fulcrum on which to place it,<br/>and I shall move the world."</div>
+    <div class="attribution">- Archimedes</div>
+  </div>
+</section>
+
+<style>
+  .cta-wrapper {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    display: grid;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    padding: 5rem 1rem 0 1rem;
+  }
+
+  .project-cta h2 {
+    font-size: 46px;
+    margin-bottom: 1rem;
+  }
+
+  .project-cta .subtitle {
+    font-size: 30px;
+  }
+
+  .project-contact a {
+    text-decoration: none;
+    color: var(--mainWhite);
+    border: 2px solid var(--mainWhite);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 150px;
+    transition: var(--mainTransition);
+  }
+
+  .project-contact a:hover {
+    background: var(--mainWhite);
+    color: var(--primaryColor);
+  }
+
+  .block-quote {
+    grid-column-start: 1;
+    grid-column-end: 25;
+    padding-top: 6rem;
+    font-size: 18px;
+  }
+
+  .quote {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .attribution {
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 991px) {
+    .cta-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .project-cta {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    .project-cta .subtitle {
+      font-size: 22px;
+    }
+
+    .project-contact {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      padding-top: 3rem;
+    }
+
+    .block-quote {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .project-cta h2 {
+      font-size: 30px;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-cta .subtitle {
+      font-size: 18px;
+    }
+
+    .project-contact {
+      padding-top: 3rem;
+    }
+  }
+</style>
