@@ -1,0 +1,134 @@
+<section class="about-component">
+  <div class="image-wrapper">
+    <img src="/images/jas-koba.jpg" alt="JAS and Koba" />
+  </div>
+  <div class="fulcrum-text">
+    <div class="about-title">Our Company</div>
+    <div class="about-subtitle">Hi! <span style="margin-left:10px">I'm John Schroeder</span></div>
+    <p>I bring decades of software development, digital design, product management, and IT operations experience as a startup founder, corporate executive, and consultant.</p>
+    <p>You'll work directly with me. I partner with clients remotely and expand the team as needed to bring your projects to life. As startup veterans, our team can relate to the challenges you and your team face.</p>
+    <p>We will make sure your project is executed on time, on budget, and with world-class quality. You'll get all the benefits of hiring a full-service development shop, without the hassle or expense.</p>
+    <div class="about-button">
+      <a href="/projects">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-component {
+    color: #bec5cc;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3rem 10rem 3rem;
+    max-width: 1600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .image-wrapper img {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-style: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .fulcrum-text {
+    line-height: 1.5rem;
+    background-color: #191e25;
+    font-weight: 400;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 80px 60px;
+    max-width: 60%;
+    background-color: #191e25;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-title {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 2.9rem;
+    font-weight: 700;
+    color: var(--mainWhite);
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-subtitle {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--mainWhite);
+    text-align: left;
+  }
+
+  .about-button {
+    text-decoration: none;
+    border: 2px solid var(--mainWhite);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 150px;
+    transition: var(--mainTransition);
+    margin-top: 2rem;
+  }
+
+  .about-button a {
+    color: var(--mainWhite);
+  }
+
+  .about-button:hover {
+    background: var(--mainWhite);
+    cursor: pointer;
+  }
+
+  .about-button:hover a {
+    color: var(--primaryColor) !important;
+  }
+
+  @media screen and (max-width: 959px) {
+    .about-component {
+      padding: 0 1rem 6rem 1rem;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      height: 400px;
+    }
+
+    .image-wrapper img {
+      object-position: top center;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .fulcrum-text {
+      min-width: 100%;
+      padding: 40px;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+</style>
