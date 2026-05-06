@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">JAS Monogram Logo</title>
+  <desc id="desc">Geometric navy JAS monogram inspired by selected variant 3.</desc>
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <g fill="#203a63" transform="translate(90,60)">
+    <!-- J -->
+    <path d="
+      M 170 160
+      L 220 110
+      L 220 460
+      L 145 535
+      L 35 425
+      L 80 380
+      L 145 445
+      L 170 420
+      Z"/>
+    <!-- A: outer form -->
+    <path d="
+      M 470 80
+      L 605 215
+      L 605 590
+      L 555 640
+      L 555 245
+      L 470 160
+      L 385 245
+      L 385 640
+      L 335 590
+      L 335 215
+      Z"/>
+    <!-- A: counter / inner vertical notch -->
+    <path d="
+      M 470 210
+      L 520 260
+      L 520 350
+      L 420 350
+      L 420 260
+      Z" fill="#ffffff"/>
+    <!-- A: center stem / bar cut to sharpen the A -->
+    <path d="
+      M 446 360
+      L 494 360
+      L 494 520
+      L 446 568
+      Z" fill="#ffffff"/>
+    <!-- S -->
+    <path d="
+      M 705 155
+      L 865 315
+      L 820 360
+      L 725 265
+      L 695 295
+      L 830 430
+      L 745 515
+      L 880 650
+      L 830 700
+      L 650 520
+      L 735 435
+      L 600 300
+      Z"/>
+    <!-- S inner cuts for separated angular stroke feel -->
+    <path d="
+      M 725 265
+      L 780 320
+      L 735 365
+      L 680 310
+      Z" fill="#ffffff"/>
+    <path d="
+      M 735 435
+      L 790 490
+      L 745 535
+      L 690 480
+      Z" fill="#ffffff"/>
+  </g>
+</svg>
