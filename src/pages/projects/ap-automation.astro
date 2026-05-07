@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import CTA from '../../components/CTA.astro';
+---
+
+<BaseLayout
+  title="Pet Partners | Projects | Fulcrum Growth Technology Services"
+  description="Pet Partners' aging, brittle technology was limiting its ability to acquire, integrate, and operate new veterinary practices."
+>
+  <main>
+    <Navbar />
+    <section class="project-hero">
+      <div class="hero-background"></div>
+      <div class="banner">
+        <h1>Pet Partners</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="project-content">
+      <div class="project-header">
+        <h2>Digital Transformation</h2>
+        <p class="project-description">Pet Partners' aging, brittle technology was limiting its ability to acquire, integrate, and operate new veterinary practices.</p>
+      </div>
+
+      <div class="project-images">
+        <div class="project-image">
+          <img src="/images/americas-cup-1.jpg" alt="Pet Partners" />
+        </div>
+        <div class="project-image">
+          <img src="/images/americas-cup-2.jpg" alt="Pet Partners" />
+        </div>
+      </div>
+
+      <div class="project-body">
+        <p>Pet Partners is a growing network of veterinary practices facing the challenge of modernizing legacy systems while maintaining uninterrupted care for pets.</p>
+        <p>We helped them:</p>
+        <ul>
+          <li>Modernize their technology infrastructure to support rapid growth</li>
+          <li>Automate accounts payable processes across the organization</li>
+          <li>Build integration pipelines for acquired veterinary practices</li>
+          <li>Create scalable systems for operating new acquisitions</li>
+        </ul>
+        <p>The transformation enabled Pet Partners to accelerate their acquisition strategy while maintaining operational excellence.</p>
+      </div>
+
+      <div class="project-back">
+        <a href="/projects">← Back to Projects</a>
+      </div>
+    </section>
+
+    <CTA />
+    <Footer />
+  </main>
+</BaseLayout>
+
+<style>
+  .project-hero {
+    min-height: 200px;
+    background-image: linear-gradient(rgba(41, 60, 99, 0.2), rgba(41, 60, 99, 0.2)), url('/images/americas-cup-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner {
+    text-align: left;
+    letter-spacing: var(--mainSpacing);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 12px 4px 71px hsla(0, 0%, 45.9%, 0);
+    margin: 1.25rem 1.25rem 0.25rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .project-hero {
+      min-height: 450px;
+    }
+
+    .banner h1 {
+      margin: 4rem 1rem 1rem 4rem;
+      font-size: 3.5rem;
+    }
+  }
+
+  .project-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 5rem 1rem 6rem;
+  }
+
+  .project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .project-header h2 {
+    font-size: 2.5rem;
+    color: var(--mainBlack);
+    margin-bottom: 1rem;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-image {
+    box-shadow: 0 4px 18px rgba(130, 144, 151, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(222, 226, 230, 0.5);
+    border-radius: 8px;
+  }
+
+  .project-body {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+  }
+
+  .project-body p {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-body ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .project-body li {
+    margin-bottom: 0.75rem;
+  }
+
+  .project-back {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .project-back a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    border: 2px solid var(--primaryColor);
+    border-radius: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+  }
+
+  .project-back a:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
+</style>
